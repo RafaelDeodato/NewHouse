@@ -65,7 +65,17 @@ header{
 
 .menu li:last-child{
   margin-right: 0;
+  /*
   border-bottom: 2px solid #246B61;
+  */
+}
+
+.menu li:last-child::after{
+  content: '';
+  display: block;
+  height: 2px;
+  width: 70px;
+  background-color: #246B61;
 }
 
 /* INTRO */
@@ -597,11 +607,10 @@ footer span {
   .header-container {
     width: 300px;
     height: 80px;
-    flex-direction: column;
   }
 
   .logo {
-    width: 150px;
+    width: 200px;
     margin-top: 10px;
   }
 

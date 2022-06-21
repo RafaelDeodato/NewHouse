@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/geral.css">
+  <link rel="stylesheet" href="css/menu-mobile.css">
   <title>NewHouse</title>
 </head>
 
@@ -14,11 +15,16 @@
     <div class="container">
       <div class="header-container">
         <a href="#"><img src="img/logo.svg" alt="logo" class="logo"></a>
-        <ul class="menu">
-          <li><a href="produtos.html">produtos</a></li>
-          <li><a href="#">contato</a></li>
-          <li><a href="#">orçamento</a></li>
-        </ul>
+
+        <button data-menu="button" aria-expanded="false" aria-controls="menu"></button>
+        
+          <ul data-menu="list" class="menu" id="menu">
+            <li><a href="produtos.html">produtos</a></li>
+            <li><a href="#">contato</a></li>
+            <li><a href="#">orçamento</a></li>
+          </ul>
+        
+
       </div>
     </div>
   </header>
@@ -39,7 +45,7 @@
         <h2>Nossos <span>Produtos</span></h2>
         <p>A maior rede de Móveis Planejados em São Paulo, especialista em ambientes modernos e otimizados, sendo
           cozinhas, espaço gourmet, home, home office, quartos, banheiros e até ambientes corporativos.</p>
-          <a href="produtos.html" class="button button-desktop">VEJA MAIS <img src="img/seta.svg"></a>
+        <a href="produtos.html" class="button button-desktop">VEJA MAIS <img src="img/seta.svg"></a>
       </div>
       <div class="produtos-img">
         <img src="img/produtos1.png" alt="produtos">
@@ -133,6 +139,8 @@
       <p>Desenvolvido por <span><a href="https://github.com/rafaeldeodato">Rafael Deodato</a></span></p>
     </div>
   </footer>
+
+  <script type="module" src="JS/script.js"></script>
 
 </body>
 
