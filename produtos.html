@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/geral.css">
   <link rel="stylesheet" href="css/produtos.css">
+  <link rel="stylesheet" href="css/menu-mobile.css">
   <title>NewHouse</title>
 </head>
 
@@ -15,11 +16,12 @@
     <div class="container">
       <div class="header-container">
         <a href="index.html"><img src="img/logo.svg" alt="logo" class="logo"></a>
-        <ul class="menu">
-          <li><a href="#">produtos</a></li>
-          <li><a href="#">contato</a></li>
-          <li><a href="#">orçamento</a></li>
-        </ul>
+        <button data-menu="button" aria-expanded="false" aria-controls="menu"></button>
+          <ul data-menu="list" class="menu" id="menu">
+            <li><a href="#">produtos</a></li>
+            <li><a href="index.html">contato</a></li>
+            <li><a href="orcamento.html">orçamento</a></li>
+          </ul>
       </div>
     </div>
   </header>
@@ -50,6 +52,8 @@
       <p>Desenvolvido por <span><a href="https://github.com/rafaeldeodato">Rafael Deodato</a></span></p>
     </div>
   </footer>
+
+  <script type="module" src="JS/script.js"></script>
 
 </body>
 

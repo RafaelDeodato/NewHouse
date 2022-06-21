@@ -74,7 +74,7 @@ header{
   content: '';
   display: block;
   height: 2px;
-  width: 70px;
+  width: 110px;
   background-color: #246B61;
 }
 
@@ -412,6 +412,10 @@ footer span {
     font-size: 16px;
   }
 
+  .menu li:last-child::after{
+    width: 90px;
+  }
+
   /* intro */
 
   .intro h1 {
@@ -619,6 +623,10 @@ footer span {
     font-size: 10px;
   }
 
+  .menu li:last-child::after{
+    width: 50px;
+  }
+
   /* INTRO */
 
   .intro {
@@ -757,6 +765,7 @@ footer span {
 
   .contato-container {
     width: 300px;
+    padding-top: 64px;
   }
 
   .contato img {
@@ -774,4 +783,13 @@ footer span {
     flex-direction: column;
     justify-content: space-around;
   }
+}
+
+.title520 {
+  color: #520;
+  margin-top: 64px;
+}
+
+.title520::after {
+  background: #520;
 }

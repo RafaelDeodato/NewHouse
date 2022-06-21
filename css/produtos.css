@@ -1,12 +1,3 @@
-.title520 {
-  color: #520;
-  margin-top: 64px;
-}
-
-.title520::after {
-  background: #520;
-}
-
 .produtos {
   display: grid;
   grid-template-areas: 'img1 img2 img3'

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/geral.css">
+  <link rel="stylesheet" href="css/orcamento.css">
+  <link rel="stylesheet" href="css/menu-mobile.css">
+  <title>NewHouse</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="header-container">
+        <a href="index.html"><img src="img/logo.svg" alt="logo" class="logo"></a>
+        <button data-menu="button" aria-expanded="false" aria-controls="menu"></button>
+          <ul data-menu="list" class="menu" id="menu">
+            <li><a href="produtos.html">produtos</a></li>
+            <li><a href="index.html">contato</a></li>
+            <li><a href="#">orçamento</a></li>
+          </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1 class="title-fca title520">Solicitar <span>Orçamento</span></h1>
+  </div>
+
+  <section class="container orcamento">
+    <form action="">
+      <label for="nome">Nome</label>
+      <input class="text" type="text" name="nome" id="nome">
+      <label for="telefone">Telefone</label>
+      <input class="text" type="text" name="telefone" id="telefone">
+      <label for="email">Email</label>
+      <input class="text" type="text" name="email" id="email">
+      <label for="cep">CEP</label>
+      <input class="text" type="text" name="cep" id="cep">
+      <label for="ambientes">Para quais ambientes deseja fazer orçamento?</label>
+      <input class="text" type="text" name="ambientes" id="ambientes">
+      
+      <label class="label-margin">Imóvel disponível para receber os móveis?</label>
+        <input type="radio" name="disponivel" id="sim" value="sim">
+        <label class="radio-label" for="sim">SIM</label>
+        <input type="radio" name="disponivel" id="nao" value="nao">
+        <label class="radio-label" for="nao">NÃO</label>
+      
+      <label class="label-margin">Pretenção de investimento nos móveis</label>
+        <div class="inline-label">
+          <input type="radio" name="valor" id="valor1" value="5-15">
+          <label for="valor1" class="label520">R$ 5000,00 até R$ 15.000,00</label>
+        </div>
+        <div class="inline-label">
+          <input type="radio" name="valor" id="valor2" value="15-25">
+          <label for="valor2" class="label520">R$ 15000,00 até R$ 25.000,00</label>
+        </div>
+        <div class="inline-label">
+          <input type="radio" name="valor" id="valor3" value="25-35">
+          <label for="valor3" class="label520">R$ 25000,00 até R$ 35.000,00</label>
+        </div>
+        <div class="inline-label">
+          <input type="radio" name="valor" id="valor4" value="35-45">
+          <label for="valor4" class="label520">R$ 35000,00 até R$ 45.000,00</label>
+        </div>
+        <div class="inline-label">
+          <input type="radio" name="valor" id="valor5" value="45-55">
+          <label for="valor5" class="label520">R$ 45000,00 até R$ 55.000,00</label>
+        </div>
+        <div class="inline-label">
+          <input type="radio" name="valor" id="valor6" value="55-75">
+          <label for="valor6" class="label520">R$ 55000,00 até R$ 75.000,00</label>
+        </div>
+        <div class="inline-label">
+          <input type="radio" name="valor" id="valor7" value="75-100">
+          <label for="valor7" class="label520">R$ 75000,00 até R$ 100.000,00</label>
+        </div>
+        <div class="inline-label">
+          <input type="radio" name="valor" id="valor8" value="100">
+          <label for="valor8" class="label520">acima de R$ 100.000,00</label>
+        </div>
+
+      <label class="label-margin">A compra será imediata ou é uma pesquisa?</label>
+        <input type="radio" name="pesquisa" id="imediata" value="imediata">
+        <label class="radio-label" for="imediata">Imediata</label>
+        <input type="radio" name="pesquisa" id="pesquisa" value="pesquisa">
+        <label class="radio-label" for="pesquisa">Pesquisa</label>
+
+      <label for="descricao" class="label-margin">Descrição detalhada dos móveis</label>
+      <textarea name="descricao" id="descricao" cols="50" rows="5"></textarea>
+
+      <button type="submit" class="button">SOLICITAR <img src="img/seta.svg"></button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <p><span>NewHouse</span> - Todos os direitos reservados</p>
+      <p>Desenvolvido por <span><a href="https://github.com/rafaeldeodato">Rafael Deodato</a></span></p>
+    </div>
+  </footer>
+
+  <script type="module" src="JS/script.js"></script>
+
+</body>
+
+</html>
