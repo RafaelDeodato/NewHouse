@@ -164,12 +164,17 @@ header{
   align-items: center;
   box-sizing: border-box;
   padding: 23px 32px;
-  
   border: none;
+
   background: linear-gradient(#43857C, #246B61);
   color: #fff;
   font-family: 'Martel';
   font-size: 24px;
+  
+}
+
+.button:hover {
+  background: linear-gradient(#6BA099, #43857C);
 }
 
 .button img {
@@ -340,8 +345,9 @@ header{
 }
 
 .phones-span span {
-  font-family: 'Martel', serif;
+  font-family: 'Montserrat', sans-serif;
   color: #fca;
+  margin-bottom: 15px;
 }
 
 /* FOOTER */

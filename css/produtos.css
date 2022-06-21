@@ -1,0 +1,99 @@
+.title-produtos {
+  color: #520;
+  margin-top: 64px;
+}
+
+.title-produtos::after {
+  background: #520;
+}
+
+.produtos {
+  display: grid;
+  grid-template-areas: 'img1 img2 img3'
+                        'img4 img5 img6'
+                        'img7 img5 img8'
+                        'img9 img9 img10'
+                        'img9 img9 img10'
+                        'img11 img12 img13';
+  gap: 15px;
+  margin-bottom: 64px;
+}
+
+@media screen and (max-width: 1000px) {
+  .produtos {
+    display: grid;
+    grid-template-areas: 'img1'
+                          'img2'
+                          'img3'
+                          'img4'
+                          'img5'
+                          'img6'
+                          'img7'
+                          'img8'
+                          'img9'
+                          'img10'
+                          'img11'
+                          'img12'
+                          'img13';
+  }
+
+  .produtos img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+}
+
+.img01 {
+  grid-area: img1;
+}
+
+.img02 {
+  grid-area: img2;
+}
+
+.img03 {
+  grid-area: img3;
+}
+
+.img04 {
+  grid-area: img4;
+}
+
+.img05 {
+  grid-area: img5;
+}
+
+.img06 {
+  grid-area: img6;
+}
+
+.img07 {
+  grid-area: img7;
+}
+
+.img08 {
+  grid-area: img8;
+}
+
+.img09 {
+  grid-area: img9;
+}
+
+.img10 {
+  grid-area: img10;
+}
+
+.img11 {
+  grid-area: img11;
+}
+
+.img12 {
+  grid-area: img12;
+}
+
+.img013 {
+  grid-area: img13;
+}
