@@ -1,9 +1,9 @@
-.title-produtos {
+.title520 {
   color: #520;
   margin-top: 64px;
 }
 
-.title-produtos::after {
+.title520::after {
   background: #520;
 }
 
